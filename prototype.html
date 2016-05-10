@@ -39,11 +39,27 @@
 
 <body unresolved class="fullbleed">
   <paper-drawer-panel id="drawer_panel" disable-swipe force-narrow>
-    <paper-header-panel drawer mode="seamed">
-      <div id="drawer_content"></div>
+    <paper-header-panel drawer="" mode="seamed" at-top="">
+      <div id="drawer_content" style="border: none;"></div>
     </paper-header-panel>
-    <paper-header-panel main mode="seamed">
-      <iron-pages id="app_content" attr-for-selected="id"></iron-pages>
+    <paper-header-panel main="" mode="seamed" at-top="">
+      <iron-pages id="app_content" attr-for-selected="id">
+        <section id="hyyh">
+          <poly-layout id="poly1"></poly-layout>
+          <poly-tabs tabs="[{&quot;name&quot;:&quot;Tab 1&quot;},{&quot;name&quot;:&quot;Tab 2&quot;}]" selected_tab="0" id="poly2"></poly-tabs>
+          <poly-toolbar id="poly3">
+            <poly-icon-button icon="menu" src="" link="" id="poly3A" style="margin-right: 20px;"></poly-icon-button>
+            <poly-label text="Aplicación" size="paper-font-subhead" link="" id="poly3B" flex=""></poly-label>
+            <poly-icon-button icon="refresh" src="" link="" id="poly3C"></poly-icon-button>
+            <poly-icon-button icon="search" src="" link="" id="poly3D"></poly-icon-button>
+          </poly-toolbar>
+          <poly-paragraph text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere voluptas illo inventore debitis et sit molestiae pariatur doloremque dicta." size="paper-font-body1" link="" id="poly4"></poly-paragraph>
+          <poly-label text="Texto" size="paper-font-subhead" link="" id="poly5"></poly-label>
+          <poly-icon-button icon="favorite" src="" link="" id="poly6"></poly-icon-button>
+          <poly-card title="Título" image="http://placehold.it/350x150/eee/33000000" id="poly7"></poly-card>
+          <poly-button text="Botón" icon="" raised="" link="" id="poly8"></poly-button>
+        </section>
+      </iron-pages>
     </paper-header-panel>
   </paper-drawer-panel>
 
